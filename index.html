@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Conexiencia - Conectando con el futuro</title>
 </head>
 
-<body>
+<body style="font-family: 'Raleway', sans-serif;">
 
     <header>
         <nav>
             <ul>
-                <li><a href="inicio-section">Inicio</a></li>
-                <li><a href="nosotros-section">Nosotros</a></li>
-                <li><a href="experiencias-section">Experiencias</a></li>
-                <li><a href="servicios-section">Servicios</a></li>
-                <li><a href="contacto-section">Contáctanos</a></li>
+                <li><a href="#hero-section">Inicio</a></li>
+                <li><a href="#nosotros-section">Nosotros</a></li>
+                <li><a href="#experiencias-section">Experiencias</a></li>
+                <li><a href="#servicios-section">Servicios</a></li>
+                <li><a href="#contacto-section">Contáctanos</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="hero-section">
-            <h1>Conexiencia - Conectando con el futuro</h1>
-            <img src="img/hero.webp" alt="Inicio">
+                <div class="hero-content">
+                    <h1>Despertamos la <span>curiosidad</span> por la ciencia</h1>
+                    <p>Transformamos la manera en que las personas se relacionan con la ciencia con la ciencia. Talleres dinámicos para escuelas, organizaciones y comunidades.</p>
+                    <button>Conoce nuestros servicios</button>
+                    <button>Sobre nosotros</button>
+                </div>
+                <div class="hero-images">
+                    <img src="img/hero.webp" alt="Imagen hero banner">
+                </div>
         </section>
         <section id="nosotros-section">
             
@@ -79,7 +89,44 @@
             </div>
         </section>
         <section id="servicios-section">
+            <nav class="services-nav" aria-label="Lista de servicios">
+                <ul class="services-list">
+                    <li>
+                      <button class="feature-tab active" type="button">
+                        Servicio 1
+                      </button>
+                    </li>
+                    <li>
+                      <button class="feature-tab" type="button">
+                        Servicio 2
+                      </button>
+                    </li>
+                    <li>
+                      <button class="feature-tab" type="button">
+                        Servicio 3
+                      </button>
+                    </li>
+                    
+                  </ul>
+                </nav>
 
+            <div class="tab-panel">
+                <div class="gallery">
+                    <!-- Aquí va un slider con imágenes -->
+                </div>
+              
+                <div class="service-info">
+                    <!-- los servicios los tendremos en un objeto en js o hay que ver si lo hacemos con clases-->
+                    <h3>Servicio 1</h3>
+                    <p>En este espectáculo, niñas, niños (y adultos también) descubren que
+                        detrás de cada sorpresa hay un fenómeno científico esperando ser
+                        comprendido.
+                        A través de demostraciones visuales y participativas, exploramos
+                        reacciones químicas, electricidad y cambios de estado que parecen
+                        magia… pero no lo son
+                    </p>
+                </div>
+            </div>
         </section>
         <section id="contacto-section">
             <h2>Contáctanos</h2>
