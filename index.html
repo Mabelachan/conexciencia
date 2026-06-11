@@ -22,7 +22,8 @@
         <nav>
             <ul>
                 <li><a href="#hero-section">Inicio</a></li>
-                <li><a href="#nosotros-section">Nosotros</a></li>
+                <li><a href="#mision-section">Misión</a></li>
+                <li><a href="#nosotros-section">Sobre Mi</a></li>
                 <li><a href="#experiencias-section">Experiencias</a></li>
                 <li><a href="#servicios-section">Servicios</a></li>
                 <li><a href="#contacto-section">Contáctanos</a></li>
@@ -37,16 +38,16 @@
                     <h1>Despertamos la <span>curiosidad</span> por la ciencia</h1>
                     <p>Transformamos la manera en que las personas se relacionan con la ciencia con la ciencia. Talleres dinámicos para escuelas, organizaciones y comunidades.</p>
                     <a href="#servicios-section"><button>Conoce nuestros servicios</button></a>
-                    <a href="#nosotros-section"><button>Sobre nosotros</button></a>
+                    <a href="nosotros-section"><button>Sobre nosotros</button></a>
                 </div>
                 <div class="hero-images">
-                    <img src="img/hero.webp" alt="Imagen hero banner">
+                    <img src="img/logoConexCienciaManos.jpg" alt="Imagen hero banner" height="120">
                 </div>
         </section>
-        <section id="nosotros-section">
+        <section id="mision-section">
             
             <div class="mision-content">
-                <h6>Misión</h6>
+                <h3>Misión</h3>
                 <h2>Hacer la ciencia accesible y relevante</h2>
                 <p>Nuestra misión es transformar la manera en que las
                     personas se relacionan con la ciencia. A través de
@@ -61,43 +62,84 @@
                 </p>
             </div>
             <div class="vision-content">
-                <h6>Visión</h6>
+                <h4>Visión</h4>
                 <h2>Inspirar la pasión por la ciencia en cada rincón del país</h2>
                 <p>Creamos una comunidad de mentes curiosas
                     y comprometidas con el conocimiento científico
                 </p>
             </div>
         </section>
-        <section id="experiencias-section">
+
+        <section id="nosotros-section">
             
-            <h2>Experiencias</h2>
-            <!-- Este será un carrusel de imágenes -->
+            <h3>Sobre Mi</h3>
+            
+            <div class="sobre-mi-descripcion">
+                <p>Mi nombre es Carolina Lagos, Magíster en Didáctica de la Ciencias Experimentales y una 
+                    apasionada divulgadora científica. Anhelo transformar la percepción sobre la ciencia para 
+                    hacerla accesible y atractiva para todos. Para ello, he desarrollado herramientas creativas 
+                    que fomentan el pensamiento crítico desmitificando conceptos complejos, especialemte entre niños y niñas
+                </p>
+            </div>
             <div class="owl-carousel custom-carousel owl-theme"> 
                 <div class="item active">
                     <div class="item-desc">
-                        <img src="img/experiencia1.webp" alt="Imagen primera sección">
-                        <h3>Imagen 1</h3>
+                        <img src="img/img_carolina1.png" alt="Imagen primera sección" height="150">
+                        
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="item-desc">
+                        <img src="img/img_carolina2.jpg" alt="Imagen segunda sección" height="150">
+                        
+                     </div>
+                </div>
+                
+                <div class="item">
+                    <div class="item-desc">
+                        <img src="img/img_carolina4.jpg" alt="Imagen segunda sección" height="150">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experiencias-section">
+            
+            <h3>Experiencias</h3>
+            <!-- Por ahora, esto será un carrusel de imágenes, cuando podamos hacer uso de scripts de js podremos insertar reels-->
+            <div class="owl-carousel custom-carousel owl-theme"> 
+                <div class="item active">
+                    <div class="item-desc">
+                        <img src="img/img_taller1.jpg" alt="Imagen primera sección" height="150">
+                        <h5>Imagen 1</h5>
                         <p>Texto que acompaña a la imagen 1</p>
                     </div>
                 </div>
                 <div class="item">
                     <div class="item-desc">
-                        <img src="img/experiencia2.webp" alt="Imagen segunda sección">
-                        <h3>Imagen 2</h3>
+                        <img src="img/img_taller2.jpg" alt="Imagen segunda sección" height="150">
+                        <h5>Imagen 2</h5>
                         <p>Texto que acompaña a la imagen 2</p>
                     </div>
                 </div>
+
                 <div class="item">
                     <div class="item-desc">
-                        <img src="img/experiencia3.webp" alt="Imagen tercera sección">
-                        <h3>Imagen 3</h3>
-                        <p>Texto que acompaña a la imagen 3</p>
+                        <img src="img/img_taller3.jpg" alt="Imagen segunda sección" height="150">
+                        <h5>Imagen 3</h5>
+                        <p>Texto que acompaña a la imagen 2</p>
                     </div>
                 </div>
+                <!-- este código en conjunto con el script que está abajo antes de cerrar /body permitirán incrustar reels de instagram
+                <div class="item">
+                    <div class="item-desc">
+                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DNEl5jpJaaI/"></blockquote>
+                    </div>
+                </div> -->
             </div>
         </section>
         <section id="servicios-section">
-            <h2>Nuestros servicios</h2>
+            <h3>Nuestros servicios</h3>
             <nav class="services-nav" aria-label="Lista de servicios">
                 <ul class="services-list">
                     <li>
@@ -144,7 +186,7 @@
             </div>
         </section>
         <section id="contacto-section">
-            <h2>Contáctanos</h2>
+            <h3>Contáctanos</h3>
             <div class="formulario-contacto">
                 <form action="#">
                     <label for="nombre">Nombre:</label>
@@ -177,7 +219,8 @@
             <nav>
                 <ul>
                     <li><a href="#hero-section">Inicio</a></li>
-                    <li><a href="#nosotros-section">Nosotros</a></li>
+                    <li><a href="#mision-section">Misión</a></li>
+                    <li><a href="#nosotros-section">Sobre Mi</a></li>
                     <li><a href="#experiencias-section">Experiencias</a></li>
                     <li><a href="#servicios-section">Servicios</a></li>
                     <li><a href="#contacto-section">Contáctanos</a></li>
@@ -191,51 +234,12 @@
         </div>
         
     </footer>
-     <section id="preguntas-frecuentes">
-        <h2>Preguntas Frecuentes</h2>
-            <details><summary>Revisar Aquí:</summary>
-            <details>
-                <summary>¿Desde que edad es recomendable este tipo de actividad?</summary>
-                <p>Hemos estado en eventos con niños y niñas desde los 5 años de edad.</p>
-            </details>
-            <details>
-                <summary>¿Cuál es la duración de las actividades??</summary>
-                <p>El tiempo mínimo de ejecución son 30 minutos.</p>
-                <p>Opción 1: 45 minutos aprox.<br>Opción 2: 80 minutos aprox.</p>
-            </details>
-            <details>
-                <summary>¿En qué lugar se encuentran?</summary>
-                <p>Estamos en Santiago y nos movemos por los alrededores, podemos ir a otras
-                regiones con un recargo por traslado.</p>
-            </details>
-            <details>
-                <summary>¿Con cuánto tiempo hay reservar?</summary>
-                <p>La reserva se debe hacer como mínimo dos semanas antes del evento, se
-                cancela el 50% y el día del evento el otro 50%.</p>
-            </details>
-            <details>
-                <summary>¿Los materiales están incluidos?</summary>
-                <p>Sí, todos los materiales están incluidos.</p>
-            </details>
-            <details>
-                <summary>¿Cuáles son los valores de las actividades?</summary>
-                <p>Opción 1: desde $150.000<br>Opción 2: desde $200.000</p>
-            </details>
-            <details>
-                <summary>¿Tienen talleres con otras temáticas?</summary>
-                <p>Se pueden diseñar e implementar distintos temas según las necesidades.</p>
-            </details>
-            <details>
-                <summary>¿Hay un máximo de participantes??</summary>
-                <p>Las actividades están diseñadas para hasta 15 niños y niñas, por cada adicional
-                son $5.000.</p>
-            </details>
-            <details>
-                <summary>¿Qué sucede si se cancela el evento y ya aboné el 50%??</summary>
-                <p>Si cancela el evento del abono del 50% se resta el 25% del total.</p>
-            </details>
-        </details>
-    </section>
+
+    
+    <!-- Con este script podremos agregar reels directamente a la sección de experiencias
+    <script async src="https://instagram.com/embed.js"></script>
+
+    <script src="index.js"></script>  -->
 </body>
 
 </html>
