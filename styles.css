@@ -17,6 +17,7 @@
 
 body{
     background-color: var(--color-background);
+    font-family: var(--font-normal);
 }
 /* HERO SECTION*/
 section#hero-section{
@@ -96,6 +97,7 @@ section#hero-section{
 }
   
 .btn-nosotros{
+    background-color: var(--color-background);
     padding: 16px;
     border: 1px solid var(--color-primary);
     border-radius: 4px;
@@ -114,22 +116,35 @@ section#hero-section{
     box-shadow: 0px 5px 20px 4px rgba(28,28,28,0.34);
 }
 
-.linea{
-    border: 1px solid rgb(186, 186, 186);
-}
-
 .hero-counters{
     display: flex ;
+    justify-content: space-between;
+ 
 }
 
 .hero-counter{
-    display: table-cell;
-    margin:1.5%;
-    font-size:50px;
-    background-color: #FF6F6F;
-    width:200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width:130px;
     border-radius: 50%;
-    height:200px;
-    vertical-align: middle;
+    height:130px;
+    color: var(--color-primary);
+    font-size:40px;
+    transition: 0.5s;
 }
-/* FIN HERO*/
+
+.hero-counter:hover{
+   
+    -webkit-box-shadow: 0px 5px 20px 4px rgba(28, 28, 28, 0.11); 
+    box-shadow: 0px 5px 20px 4px rgba(28,28,28,0.11);
+}
+.hero-counter > span:last-of-type{
+    font-size: 14px;
+}
+
+.hero-counter-stats:nth-child(2) > span:first-child{
+    font-size: 14px;
+}
