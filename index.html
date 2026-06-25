@@ -6,10 +6,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
     <title>Conexiencia - Conectando con el futuro</title>
 </head>
 
-<body style="font-family: 'Raleway', sans-serif;">
+<body>
 
     <header>
         <div class="logo">
@@ -32,25 +38,32 @@
     </header>
 
     <main>
+        <!------- BANNER PRINCIPAL ------->
         <section id="hero-section">
                 <div class="hero-content">
                     <h1>Despertamos la <span>curiosidad</span> por la ciencia</h1>
                     <p>Transformamos la manera en que las personas se relacionan con la ciencia con la ciencia. Talleres dinámicos para escuelas, organizaciones y comunidades.</p>
-                    <a href="#servicios-section"><button>Conoce nuestros servicios</button></a>
-                    <a href="#nosotros-section"><button>Sobre nosotros</button></a>
+                    <a href="#servicios-section"><button class="btn-servicios">Conoce nuestros servicios</button></a>
+                    <a href="#nosotros-section"><button class="btn-nosotros">Sobre nosotros</button></a>
+
+                    <div class="linea">
+                    
+                    </div>
+
+                    <div class="hero-counters">
+                        <div class="hero-counter" data-count="">0</div>
+                        <div class="hero-counter" data-count="">0</div>
+                        <div class="hero-counter" data-count="">0</div>
+                    </div>
                 </div>
                 <div class="hero-images">
-                    <img src="img/logoConexCienciaManos.jpg" alt="Imagen hero banner" height="120">
+                    <img src="img/logoConexCienciaManos.jpg" alt="Imagen hero banner" class="hero-image">
                 </div>
+
         </section>
+        <!------- FIN BANNER ------->
         
-        
-        <!-- "Sección deshechada y desplazada dentro de sección nosotros"
-        <section id="mision-section">
-            
-            
-        </section> -->
-        <!-------- INICIO SECCIÓN NOSOTROS ---------->
+        <!-------- NOSOTROS ---------->
         <section id="nosotros-section"> 
             
             <h2>¿Quiénes somos?</h2>
@@ -109,7 +122,7 @@
         </section>
         <!-------- FIN NOSOTROS ---------->
 
-        <!-------- INICIO SECCIÓN EXPERIENCIAS ---------->
+        <!-------- EXPERIENCIAS ---------->
         <section id="experiencias-section">
             
             <h2>Experiencias</h2>
@@ -147,7 +160,7 @@
         </section>
         <!-------- FIN EXPERIENCIAS ---------->
 
-        <!-------- INICIO SECCIÓN SERVICIOS  ---------->
+        <!-------- SERVICIOS  ---------->
         <section id="servicios-section">
             <h2>Nuestros servicios</h2>
             <nav class="services-nav" aria-label="Lista de servicios">
@@ -197,7 +210,7 @@
         </section>
         <!-------- FIN SECCIÓN SERVICIOS ---------->
 
-        <!-------- INICIO FAQS ---------->
+        <!-------- FAQS ---------->
         <section id="preguntas-frecuentes">
             <h2>Preguntas Frecuentes</h2>
                 <details><summary>Revisar Aquí:</summary>
@@ -244,6 +257,8 @@
             </details>
         </section>
         <!-------------- FIN FAQS ---------------->
+
+        <!-------------- FORMULARIO DE CONTACTO ---------------->
         <section id="contacto-section">
             <h2>Contáctanos</h2>
             <div class="formulario-contacto">
@@ -270,6 +285,7 @@
                 </form>
             </div>
         </section>
+        <!-------------- FIN FORMULARIO ---------------->
         
     </main>
 
