@@ -1,58 +1,153 @@
-<<<<<<< HEAD
+/* TOP-BAR SECCION*/
 .top-bar{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 30px;
-  text-decoration: none;
+    background-color: var(--color-secondary);
+    font-family: var(--font-normal);
+    color: var(--color-background);
+    font-size: 14px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    text-decoration: none;
+    margin: 0 auto;
+    max-width: 1120px;
+}
+.top-bar a {
+    color: var(--color-background);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .icon {
-  width: 18px;
-  vertical-align: middle;
-  margin-right: 5px;
-}
-.icon-wsp {
-  color: #25D366;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 .top-bar a:hover {
-  color: #ebe717; /* verde WhatsApp al pasar el mouse */
+    color: #ebe717;
 }
+/* FIN TOP-BAR SECCION*/
+/* SLOGAN SECCION*/
+.slogan {
+    font-family: var(--font-luckiest-guy);
+    font-size: 18px;
+    color: var(--color-background);
+    text-align: left;
+    margin-top: 10px;
+    font-weight: 400;
+}
+/* FIN SLOGAN SECCION*/
+
+/* HEADER SECCION*/
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: var(--color-primary);
+    margin: 0 auto;
+    max-width: 1120px;
+    border-radius: 4px;
+}
+.logo-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+/* FIN HEADER SECCION*/
+/* LOGO SECCION*/
 .imagen {
-  border-radius: 50%; /* hace que la imagen sea circular */
-  border: 2px solid #e7650e; /* borde naranja */
-  transition: transform 0.3s ease, filter 0.3s ease; /* transición suave para el zoom y saturación */
+    border-radius: 50%;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
+
 .logo {
-    width: 100px;          /* tamaño fijo para el contenedor del logo */
-    height: 100px;         /* tamaño fijo para el contenedor del logo */
-    border-radius: 50%;   /* hace que el contenedor sea circular */
-    display: flex;         /* permite centrar la imagen dentro del contenedor */
-    overflow: hidden;       /* evita que se desborde al hacer zoom */
-    justify-content: center; /* centra horizontalmente */
-    align-items: center;   /* centra verticalmente */
-    border: 5px solid #e7650e; /* borde naranja */
-
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid var(--color-secondary);
+    background-color: var(--color-background);
 }
-
 .logo .imagen {
-    width: 200%;           /* la imagen ocupa todo el ancho del contenedor */
-    height: 200%;          /* la imagen ocupa todo el alto del contenedor */
-    object-fit: cover;     /* asegura que la imagen cubra el contenedor sin distorsionarse */
-    transition: transform 0.3s ease; /* animación suave */
+    width: 100%;
+    height:100%;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+    object-position: center;
+    color: var(--color-background);
+}
+.logo:hover .imagen {
+    transform: scale(1.2);
+    filter: saturate(500%)
+}
+/* FIN LOGO SECCION*/
+/* MENU SECCION*/
+.menu{  
+    display: flex;
+    gap: 50px;
+    font-family: var(--font-normal);
+    font-style: normal;
+    font-size: 16px;
+    color: var(--color-secondary);
+    justify-content: center;
+    align-items: center;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    background-color: var(--color-background);
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.menu li:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+}
+.menu a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 16px;
+    display: block;
+}
+/* FIN MENU SECCION*/
+/* FOOTER SECCION*/
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    text-align: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 4px;
 }
 
-.logo:hover .imagen {
-  transform: scale(1.2);         /* efecto de zoom */
-  filter: saturate(500%)
-}
-=======
+/* FIN FOOTER SECCION*/
+
 *, *::after, *::before{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
-
 :root{
     --color-primary: #181559 ;
     --color-secondary: #F97500 ;
@@ -387,4 +482,3 @@ section#experiencias-section{
 
 /* FIN EXPERIENCIAS SECTION*/
 
->>>>>>> 91a9b9a16b09cd34cc5eed518173170629dd749f
