@@ -1,0 +1,52 @@
+.top-bar{
+  background-color: #e7650e;
+  font-family: 'Roboto', sans-serif;
+  color: #eee;
+  font-size: 14px;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  text-decoration: none;
+}
+.icon {
+  width: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.icon-wsp {
+  color: #25D366;
+}
+.top-bar a:hover {
+  color: #ebe717; /* verde WhatsApp al pasar el mouse */
+}
+.imagen {
+  border-radius: 50%; /* hace que la imagen sea circular */
+  border: 2px solid #e7650e; /* borde naranja */
+  transition: transform 0.3s ease, filter 0.3s ease; /* transición suave para el zoom y saturación */
+}
+.logo {
+    width: 100px;          /* tamaño fijo para el contenedor del logo */
+    height: 100px;         /* tamaño fijo para el contenedor del logo */
+    border-radius: 50%;   /* hace que el contenedor sea circular */
+    display: flex;         /* permite centrar la imagen dentro del contenedor */
+    overflow: hidden;       /* evita que se desborde al hacer zoom */
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;   /* centra verticalmente */
+    border: 5px solid #e7650e; /* borde naranja */
+
+}
+
+.logo .imagen {
+    width: 200%;           /* la imagen ocupa todo el ancho del contenedor */
+    height: 200%;          /* la imagen ocupa todo el alto del contenedor */
+    object-fit: cover;     /* asegura que la imagen cubra el contenedor sin distorsionarse */
+    transition: transform 0.3s ease; /* animación suave */
+}
+
+.logo:hover .imagen {
+  transform: scale(1.2);         /* efecto de zoom */
+  filter: saturate(500%)
+}
