@@ -150,7 +150,6 @@ section#hero-section{
 }
 /* FIN HERO*/
 
-
 /* NOSOTROS-MISION SECTION*/
 
 /* Subsección Nosotros */
@@ -338,3 +337,130 @@ section#experiencias-section{
 
 /* FIN EXPERIENCIAS SECTION*/
 
+/*PREGUNTAS FRECUENTES Y CONTACTO*/
+
+/* PREGUNTAS FRECUENTES Y CONTACTO */
+
+section#preguntas-frecuentes {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 80px 30px 20px;
+    font-family: var(--font-normal);
+    color: var(--color-text);
+}
+
+section#contacto-section {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 20px 30px 80px;
+    font-family: var(--font-normal);
+    color: var(--color-text);
+}
+
+section#preguntas-frecuentes h2,
+section#contacto-section h2 {
+    font-family: var(--font-fat);
+    font-size: 40px;
+    color: var(--color-primary);
+    margin-bottom: 32px;
+}
+
+section#preguntas-frecuentes details {
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    padding: 18px 24px;
+    box-shadow: 0px 4px 14px rgba(28, 28, 28, 0.10);
+    transition: 0.25s;
+}
+
+section#preguntas-frecuentes details details {
+    margin-top: 14px;
+    box-shadow: none;
+    border: 1px solid rgba(28, 28, 28, 0.08);
+}
+
+section#preguntas-frecuentes details details[open] {
+    border-left: 5px solid var(--color-secondary);
+}
+
+section#preguntas-frecuentes details:hover {
+    transform: translateY(-2px);
+}
+
+section#preguntas-frecuentes summary {
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+section#preguntas-frecuentes p {
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+.formulario-contacto {
+    width: 50%;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 620px;
+    margin: 0;
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 14px rgba(28, 28, 28, 0.10);
+}
+
+.formulario-contacto label {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.formulario-contacto input,
+.formulario-contacto select,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid rgba(28, 28, 28, 0.20);
+    border-radius: 8px;
+    font-family: var(--font-normal);
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+.formulario-contacto textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto select:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+    box-shadow: 0px 0px 6px rgba(249, 117, 0, 0.25);
+}
+
+.formulario-contacto button {
+    width: fit-content;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-secondary);
+    color: #ffffff;
+    font-family: var(--font-normal);
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario-contacto button:hover {
+    background-color: var(--color-primary);
+}
