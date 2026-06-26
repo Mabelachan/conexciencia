@@ -202,49 +202,78 @@
         <!-------- SERVICIOS  ---------->
         <section id="servicios-section">
             <h2>Nuestros servicios</h2>
-            <nav class="services-nav" aria-label="Lista de servicios">
-                <ul class="services-list">
-                    <li>
-                      <button class="feature-tab" type="button" aria-current="true">
-                        Servicio 1
-                      </button>
-                    </li>
-                    <li>
-                      <button class="feature-tab" type="button">
-                        Servicio 2
-                      </button>
-                    </li>
-                    <li>
-                      <button class="feature-tab" type="button">
-                        Servicio 3
-                      </button>
-                    </li>
-                    
-                  </ul>
-                </nav>
-
-            <div class="tab-panel">
-                <div class="gallery">
-                    <!-- Aquí va un slider con imágenes -->
+            <div class="servicios-container">
+                <div class="servicios-nav">
+                    <nav class="services-nav" aria-label="Lista de servicios">
+                        <ul class="services-list">
+                            <li>
+                              <button class="services-item" type="button" id="item-01">
+                                Servicio 1
+                              </button>
+                            </li>
+                            <li>
+                              <button class="services-item" type="button" id="item-02">
+                                Servicio 2
+                              </button>
+                            </li>
+                            <li>
+                              <button class="services-item" type="button" id="item-03">
+                                Servicio 3
+                              </button>
+                            </li>
+                            
+                        </ul>
+                    </nav>
                 </div>
-              
+
                 <div class="service-info">
-                    <!-- los servicios los tendremos en un objeto en js o hay que ver si lo hacemos con clases-->
-                    <h3>Servicio 1</h3>
-                    <p>En este espectáculo, niñas, niños (y adultos también) descubren que
-                        detrás de cada sorpresa hay un fenómeno científico esperando ser
-                        comprendido.
-                        A través de demostraciones visuales y participativas, exploramos
-                        reacciones químicas, electricidad y cambios de estado que parecen
-                        magia… pero no lo son.
-                    </p>
-                    <a href="https://www.instagram.com/reels/DM_YAT3JWIj/" target="_blank" rel="noopener noreferrer"><img src="icons/instagram.svg" alt=""> Reels</a>
-                    <h3>Servicio 2</h3>
-                    <p>Incluye la presentación y un entretenido taller donde cada participante decorará su cohete
-                       que después a través de una reacción química podrá hacerlo despegar.
-                    </p>
-                    <a href="https://www.instagram.com/p/DL2sNaPxHjZ/?img_index=5" target="_blank" rel="noopener noreferrer"><img src="icons/instagram.svg" alt=""> Reels</a>
-                  </div>
+                    <div class="slider">
+                        <button class="slider-btn prev">
+                            <img src="icons/arrow-left-short.svg" alt="">
+                        </button>
+                
+                        <div class="slider-image">
+                            <img id="service-image"
+                                 src="img/img_taller3.webp"
+                                 alt="Servicio">
+                        </div>
+                
+                        <button class="slider-btn next">
+                            <img src="icons/arrow-right-short.svg" alt="">
+                        </button>
+                
+                    </div>
+                
+                    <div class="slider-dots">
+                
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                
+                    </div>
+                
+                    <div class="service-description">
+                    <!--
+                        <h3 id="service-title">
+                            Servicio 1
+                        </h3>
+                    -->
+                        <p id="service-text">
+                            Espectáculo de 30 a 45 minutos, incluye
+                            experimentos químicos, reacciones que desprenden humo y otros.
+                            Al finalizar jugaremos con hielo seco (según disponibilidad del
+                            proveedor) desde $150.000
+                        </p>
+                    <!--
+                        <a id="service-link" href="#">
+                            <img src="icons/instagram.svg" alt="">
+                            Reels
+                        </a>
+                    -->
+                    </div>
+                
+                </div>
+                    
             </div>
         </section>
         <!-------- FIN SECCIÓN SERVICIOS ---------->

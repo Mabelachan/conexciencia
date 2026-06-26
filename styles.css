@@ -1,3 +1,26 @@
+/* No mover estas propiedades ya que se aplican a todo el documento :3 */
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #181559 ;
+    --color-secondary: #F97500 ;
+    --color-background: #F3F3FC ;
+    --color-text: #1C1C1C ;
+    --color-highlight: #FFE6D6;
+    --font-fat: "Luckiest Guy", cursive;
+    --font-artistic: "Londrina Shadow", sans-serif;
+    --font-normal: "Raleway", sans-serif;
+}
+body{
+    background-color: var(--color-background);
+    font-family: var(--font-normal);
+}
+/* Éstas siempre van al inicio */
+
 /* TOP-BAR SECCION*/
 .top-bar{
     background-color: var(--color-secondary);
@@ -143,26 +166,6 @@
 
 /* FIN FOOTER SECCION*/
 
-*, *::after, *::before{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-:root{
-    --color-primary: #181559 ;
-    --color-secondary: #F97500 ;
-    --color-background: #F3F3FC ;
-    --color-text: #1C1C1C ;
-    --color-highlight: #FFE6D6;
-    --font-fat: "Luckiest Guy", cursive;
-    --font-artistic: "Londrina Shadow", sans-serif;
-    --font-normal: "Raleway", sans-serif;
-}
-
-body{
-    background-color: var(--color-background);
-    font-family: var(--font-normal);
-}
 /* HERO SECTION*/
 section#hero-section{
     display: flex;
@@ -481,7 +484,156 @@ section#experiencias-section{
 
 /* FIN EXPERIENCIAS SECTION*/
 
-/*PREGUNTAS FRECUENTES Y CONTACTO*/
+/* SERVICIOS SECTION */
+
+section#servicios-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    max-width: 1120px;
+    padding: 30px;
+}
+.servicios-container{
+    display: flex;
+    max-width: 1120px;
+    margin: 40px 0;
+}
+
+section#servicios-section > h2{
+    text-align: center;
+    font-family: var(--font-normal);
+    text-transform: uppercase;
+    font-weight: 300;
+    width: 100%;
+    font-size: 36px ;
+}
+.servicios-nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    min-width: 530px;
+}
+
+.services-list{
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-list > li{
+    list-style: none;
+}
+
+.services-item{
+    background-color: var(--color-background);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 34px;
+    width: 300px;
+    transition: ease-in 0.3s;
+}
+
+.services-item:hover{
+    color: var(--color-primary);
+    font-weight: bold;
+    border-left: 2px solid var(--color-primary);
+    background-color: var(--color-highlight);
+}   
+/* INICIO SLIDERS */
+
+.servicios-slider{
+    width: 100%;
+}
+
+.service-info{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.slider{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+.slider-image{
+    width:450px;
+    height:320px;
+    overflow:hidden;
+    border-radius:12px;
+    background:#ececec;
+}
+
+.slider-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.slider-btn{
+    width:48px;
+    height:48px;
+    border:none;
+    border-radius:50%;
+    background:white;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.25s;
+}
+
+.slider-btn:hover{
+    background:var(--color-highlight);
+}
+
+.slider-btn img{
+    width:18px;
+}
+
+.slider-dots{
+    display:flex;
+    gap:10px;
+    margin:20px 0;
+}
+
+.dot{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:#d8d8d8;
+}
+
+.dot.active{
+    background:var(--color-primary);
+}
+
+.service-description{
+    width:450px;
+}
+
+.service-description h3{
+    margin-bottom:10px;
+}
+
+.service-description p{
+    line-height:1.6;
+    margin-bottom:20px;
+    text-align: center;
+}
+/* FIN SLIDERS */
+
+/* FIN SERVICIOS SECTION */
 
 /* PREGUNTAS FRECUENTES Y CONTACTO */
 
