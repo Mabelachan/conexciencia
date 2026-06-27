@@ -653,6 +653,12 @@ section#contacto-section {
     color: var(--color-text);
 }
 
+.contacto-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
 section#preguntas-frecuentes h2,
 section#contacto-section h2 {
     font-family: var(--font-fat);
@@ -697,7 +703,7 @@ section#preguntas-frecuentes p {
 }
 
 .formulario-contacto {
-    width: 50%;
+    flex: 1.35;
 }
 
 .formulario-contacto form {
@@ -705,7 +711,7 @@ section#preguntas-frecuentes p {
     flex-direction: column;
     gap: 16px;
     width: 100%;
-    max-width: 620px;
+    max-width: none;
     margin: 0;
     background-color: #ffffff;
     padding: 32px;
@@ -759,4 +765,20 @@ section#preguntas-frecuentes p {
 
 .formulario-contacto button:hover {
     background-color: var(--color-primary);
+}
+
+.contacto-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto-imagen img {
+    width: 100%;
+    max-width: 400px;
+    height: 590px;
+    object-fit: cover;
+    border-radius: 20px;
+    -webkit-box-shadow: 1px 1px 14px rgba(28, 28, 28, .94);
+    box-shadow: 1px 1px 14px rgba(28, 28, 28, .94);
 }
