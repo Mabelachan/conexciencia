@@ -65,11 +65,10 @@ body{
     letter-spacing: 2px;
 }
 /* FIN SLOGAN SECCION*/
-
 /* HEADER SECCION*/
 .main-header {
     display: flex;
-    flex-direction: row;     /* fila en vez de columna */
+    flex-direction: row;
     align-items: center;
     width: 100%;
     max-width: 1120px;
@@ -96,7 +95,6 @@ body{
 .imagen {
     border-radius: 50%;
 }
-
 .logo {
     width: 150px;
     height: 150px;
@@ -123,7 +121,7 @@ body{
 /* FIN LOGO SECCION*/
 /* MENU SECCION*/
 .menu{  
-    width: 100%;               /* ocupa todo el ancho */
+    width: 100%;
     display: flex;
     justify-content: center;
     margin: 0;
@@ -147,7 +145,6 @@ body{
     border-top: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
 }
-
 .menu li:hover {
     background-color: var(--color-primary);
 }
@@ -172,7 +169,6 @@ body{
 .menu a:hover {
     color: var(--color-background);
 }
-
 /* FIN MENU SECCION*/
 /* FOOTER SECCION*/
 .footer {
@@ -180,7 +176,6 @@ body{
     width: 100%;
     padding: 8px 0;
 }
-
 .footer-contenedor {
     max-width: 1120px;
     margin: 0 auto;
@@ -194,7 +189,6 @@ body{
 .footer-contenedor .menu li {
     height: 50px;
 }
-
 .footer-contenedor .menu  ul{
     list-style: none;
     padding: 0;
@@ -223,7 +217,6 @@ body{
 .top-bar a:hover {
     color: #ebe717;
 }
-
 /* FIN FOOTER SECCION*/
 
 /* HERO SECTION*/
